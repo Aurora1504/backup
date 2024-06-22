@@ -1,0 +1,135 @@
+@import "mocha.css";
+
+* {
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 16px;
+}
+
+window#waybar {
+    background-color: @base;
+}
+
+/* you can set a style on hover for any module like this */
+#pulseaudio {
+    margin: 5px 0px 5px 8px;
+    padding: 4px 8px 4px 8px;
+    background-color: @grey;
+    color: @lavender;
+    border-radius: 12px;
+}
+
+#pulseaudio:hover {
+    color: #000000;
+    background-color: @lavender;
+}
+
+#custom-exit {
+    margin: 4px 0px 4px 8px;
+    padding: 0px 14px 0px 11px;
+    font-size: 20px;
+    border-radius: 12px;
+    background-color: @grey;
+    color: @mauve;
+}
+
+#custom-exit:hover {
+    background-color: @mauve;
+    color: #000000;
+}
+
+#workspaces {
+    margin: 5px 0px 5px 8px;
+    background-color: @grey;
+    border-radius: 12px;
+}
+
+#workspaces button {
+    margin: 2px;
+    padding: 2px 6px 2px 6px;
+    color: @lavender;
+    border-radius: 12px;
+}
+
+#workspaces button:hover, #workspaces button.active {
+    background-color: @lavender;
+    color: #000000;
+}
+
+#clock {
+    margin: 5px 5px 5px 8px;
+    padding: 2px 6px 2px 6px;
+    background-color: @grey;
+    color: @lavender;
+    border-radius: 12px;
+}
+
+#clock:hover {
+    color: #000000;
+    background-color: @lavender;
+}
+
+#battery {
+    margin: 5px 0px 5px 8px;
+    padding: 2px 6px 2px 6px;
+    background-color: @grey;
+    color: @lavender;
+    border-radius: 12px;
+}
+
+/* Using steps() instead of linear as a timing function to limit cpu usage */
+#battery.critical:not(.charging) {
+    background-color: @red;
+    color: #000000;
+}
+
+#network {
+    margin: 5px 0px 5px 8px;
+    padding: 2px 6px 2px 6px;
+    color: @teal;
+    background-color: @grey;
+    border-radius: 12px;
+}
+
+#network:hover {
+    color: #000000;
+    background-color: @teal;
+}
+
+#network.disconnected {
+    color: @peach;
+}
+
+#network.disconnected:hover {
+    color: #000000;
+    background-color: @peach;
+}
+
+#bluetooth {
+    margin: 5px 0px 5px 8px;
+    padding: 2px 6px 2px 6px;
+    color: @lavender;
+    background-color: @grey;
+    border-radius: 12px;
+}
+
+#bluetooth.connected {
+    color: @blue;
+}
+
+#bluetooth:hover {
+    color: #000000;
+    background-color: @lavender;
+}
+
+#bluetooth.connected:hover {
+    color: #000000;
+    background-color: @blue;
+}
+
+#mpris {
+    margin: 5px 0px 5px 8px;
+    padding: 2px 6px 2px 6px;
+    background-color: @grey;
+    color: @lavender;
+    border-radius: 12px;
+}

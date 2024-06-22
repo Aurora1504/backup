@@ -1,0 +1,86 @@
+{
+    // "layer": "top", // Waybar at top layer
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    //"height": 30, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    //"spacing": 4, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": [
+        "custom/exit",
+	"hyprland/workspaces"
+    ],
+    "modules-center": [
+	"mpris"
+    ],
+    "modules-right": [
+	"tray",
+	"bluetooth",
+        "pulseaudio",
+        "network",
+	"battery",
+        "clock"
+    ],
+    "hyprland/workspaces": {
+	"format": "{icon}",
+	"persistent-workspaces": {
+		"*": 7
+	},
+	"format-icons": {
+		"1": "一",
+		"2": "二",
+		"3": "三",
+		"4": "四",
+		"5": "五",
+		"6": "六",
+		"7": "七",
+		"8": "八",
+		"9": "九",
+		"10": "十"
+	}
+    },
+    "tray": {
+        "spacing": 15
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%a, %d %b %Y}"
+    },
+    "battery": {
+        "states": {
+            "good": 100,
+            "warning": 20,
+            "critical": 10
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",       
+        "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+        "format-wifi": " ",
+        "format-ethernet": " ",
+        "tooltip-format": "{essid}",
+        "format-disconnected": " "
+    },
+    "pulseaudio": {
+        "scroll-step": 1,
+	"format-icons": ["", "", ""],
+        "format": "{icon} {volume}%",
+        "format-muted": " ",
+        "on-click": "pavucontrol"
+    },
+    "mpris": {
+	"interval": 0.1,
+	"tooltip": false,
+	"format-playing": "  {artist} - {title} ",
+	"format-paused": "  {artist} - {title} ",
+	"ignored-players": ["firefox"]
+    },
+    "bluetooth": {
+	"format": "󰂯"
+    },
+    "custom/exit": {
+	"format": "",
+	"tooltip": false,
+	"on-click": "~/bin/powermenu.sh"
+    }
+}
