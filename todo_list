@@ -1,42 +1,33 @@
 sound stuff
 bluetooth stuff
-brightnessctl
-btop
-neofetch
+brightnessctl/gammastep
+btop/neofetch/cava
 catppuccin-cursors-mocha
 catppuccin-gtk-theme-mocha
-cava
-cmatrix
+papirus-icon-theme/papirus-folder
 dosfstools
 dunst
 fcitx5
 fcitx5-bamboo
 firefox
-foot
-gammastep
+terminal
 git
-grim/slurp
-hyprland
-hyprlock
-hyprpicker
+clipboard
+screenshot
+WM + corresponding xdg-desktop-portal
+screenlock
 imv
 network stuff
 java
-lsd
 mpv
 mpv-mpris
-nemo
+file explorer
 fonts stuff
 nwg-look
-papirus-folders-git
-papirus-icon-theme
-pipes.sh
 raylib
-rofi-wayland
-sof-firmware 2024.03-1
-swaybg
+rofi
+sof-firmware
+background setter
 vim
-waybar
-clipboard stuff
-xdg-desktop-portal-hyprland
+bar
 zip/unzip
