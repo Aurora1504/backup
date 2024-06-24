@@ -85,23 +85,23 @@ window#waybar {
 #network {
     margin: 5px 0px 5px 8px;
     padding: 2px 6px 2px 6px;
-    color: @teal;
+    color: @peach;
     background-color: @grey;
     border-radius: 12px;
 }
 
 #network:hover {
     color: #000000;
-    background-color: @teal;
-}
-
-#network.disconnected {
-    color: @peach;
-}
-
-#network.disconnected:hover {
-    color: #000000;
     background-color: @peach;
+}
+
+#network.connected {
+    color: @teal;
+}
+
+#network.connected:hover {
+    color: #000000;
+    background-color: @teal;
 }
 
 #bluetooth {
@@ -132,4 +132,18 @@ window#waybar {
     background-color: @grey;
     color: @lavender;
     border-radius: 12px;
+}
+
+#mpris.playing {
+    color: @teal;
+}
+
+#mpris:hover {
+    background-color: @lavender;
+    color: #000000;
+}
+
+#mpris.playing:hover {
+    background-color: @teal;
+    color: #000000;
 }
