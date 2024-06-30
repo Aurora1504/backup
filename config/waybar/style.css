@@ -29,11 +29,11 @@ window#waybar {
     font-size: 20px;
     border-radius: 12px;
     background-color: @grey;
-    color: @mauve;
+    color: @sapphire;
 }
 
 #custom-exit:hover {
-    background-color: @mauve;
+    background-color: @sapphire;
     color: #000000;
 }
 
@@ -85,23 +85,23 @@ window#waybar {
 #network {
     margin: 5px 0px 5px 8px;
     padding: 2px 6px 2px 6px;
-    color: @peach;
+    color: @teal;
     background-color: @grey;
     border-radius: 12px;
 }
 
 #network:hover {
     color: #000000;
-    background-color: @peach;
-}
-
-#network.connected {
-    color: @teal;
-}
-
-#network.connected:hover {
-    color: #000000;
     background-color: @teal;
+}
+
+#network.disconnected {
+    color: @peach;
+}
+
+#network.disconnected:hover {
+    color: #000000;
+    background-color: @peach;
 }
 
 #bluetooth {

@@ -79,7 +79,7 @@
 	"format": "󰂯"
     },
     "custom/exit": {
-	"format": "",
+	"format": "",
 	"tooltip": false,
 	"on-click": "~/bin/powermenu.sh"
     }
